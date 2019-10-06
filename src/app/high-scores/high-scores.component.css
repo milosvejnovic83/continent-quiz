@@ -1,0 +1,81 @@
+.frame {
+    width: 50%;
+    min-height: 450px;
+    margin-left: 25%;
+    -webkit-animation: fadein 2s ease-in;
+    -moz-animation: fadein 2s ease-in;
+    animation: fadein 2s ease-in;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ranking {
+    width: 10%;
+    color: white;
+    text-align: center;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+.name {
+    width: 30%;
+    margin-left: 20%;
+    color: green;
+}
+
+.score {
+    width: 20%;
+    text-align: right;
+    color: orange;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    bottom: 30px;
+}
+
+.play{
+    width: 20%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .frame {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .play{
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (max-height: 550px) {
+
+    .button {
+        position: relative;
+    }
+}
+

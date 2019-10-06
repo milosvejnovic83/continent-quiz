@@ -1,0 +1,12 @@
+<div class="frame">
+    <h2>Question number {{ questionNumber + 1 }}</h2>
+    <div class="imgholder">
+        <img class="img" src="{{ askedQuestion }}">
+    </div>
+    <div class="questions" *ngFor="let answer of askedQuestionAnswer; let i = index">
+        <button id="{{ i }}" class="answer" (click)="trueOrFalse(answer, i)">{{ answer }}</button>
+    </div>   
+</div> 
+<div class="button">
+    <button id="next" class="next opacity" (click)="nextQuestion()" disabled="true">Next</button>
+</div>

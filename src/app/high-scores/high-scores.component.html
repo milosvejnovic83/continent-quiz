@@ -1,0 +1,11 @@
+<div class="frame">
+    <h2>HIGH SCORES</h2>
+    <div class="scores" *ngFor="let highScore of highScoreList | slice:0:3; let i = index;">
+        <h3 class="ranking">{{ i+1 }}</h3>
+        <h3 class="name">{{ highScore.name }}</h3>
+        <h3 class="score">{{ highScore.score }}</h3>
+    </div>       
+</div> 
+<div class="button">
+    <button class="play" routerLink="/check-in" routerLinkActive="active">Play</button>
+</div> 

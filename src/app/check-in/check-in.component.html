@@ -1,0 +1,9 @@
+<div class="frame">
+    <h2>ENTER USERNAME</h2>
+    <div class="userInput">
+        <input class="username" type="text" maxlength="10" placeholder="Enter username" [(ngModel)]="userName">
+    </div>
+</div>
+<div class="button">
+    <button class="start" routerLink="/questions" routerLinkActive="active" (click)="addUser()">Start</button>
+</div> 
